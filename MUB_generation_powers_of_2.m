@@ -53,5 +53,6 @@ end
 B=B/sqrt(N);
 toc
 % G=unique(abs(B'*B))
-string="first 64 MUBs of 2^12"
-save('MUB_2^12','B','string')
+string="first "+string(r+1)+" MUBs of dimension 2^"+string(n);
+txt="MUB_2^"+string(n)+".mat";
+save('txt','B','string')
